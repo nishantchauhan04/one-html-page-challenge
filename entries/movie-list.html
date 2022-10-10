@@ -104,15 +104,12 @@
         for (const movie of movies) {
             const row = document.createElement("tr");
             const title = document.createElement("td");
-            const rating = document.createElement("td");
             const notes = document.createElement("td");
 
             row.appendChild(title);
-            row.appendChild(rating);
             row.appendChild(notes);
 
             title.textContent = movie.title;
-            rating.textContent = movie.rating;
             notes.textContent = movie.notes;
 
             table.appendChild(row);
